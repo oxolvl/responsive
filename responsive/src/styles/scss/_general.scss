@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+}
+.row {
+  padding: 40px;
+  .col {
+    padding: 15px 15px 0;
+  }
+}
+.text-holder {
+  padding: 15px;
+  border: 2px solid $orange;
+}
+@media screen and (min-width: 768px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    .col {
+      width: 50%;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    .col {
+      width: calc(100% / 3);
+    }
+  }
+}
